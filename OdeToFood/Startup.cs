@@ -31,7 +31,8 @@ namespace OdeToFood
                 options.UseSqlServer(Configuration.GetConnectionString("OdeToFoodDb"));
             });
 
-            services.AddScoped<IRestaurantData, SqlRestaurantData>();
+            //services.AddScoped<IRestaurantData, SqlRestaurantData>();
+            services.AddScoped<IRestaurantData, InMemoryRestaurantData>();
 
             services.Configure<CookiePolicyOptions>(options =>
             {
@@ -59,9 +60,22 @@ namespace OdeToFood
 
             app.UseHttpsRedirection();
             app.UseStaticFiles();
+            app.UseNodeModules(env);
             app.UseCookiePolicy();
 
             app.UseMvc();
+
+            app.Use(SayHelloMiddleware);
+        }
+
+        private RequestDelegate SayHelloMiddleware(RequestDelegate next)
+        {
+            return async ctx =>
+            {
+                if (ctx.Request.Path.StartsWithSegments("/hello"))
+                    await ctx.Response.WriteAsync("Hello, World!");
+                else await next(ctx);
+            };
         }
     }
 }

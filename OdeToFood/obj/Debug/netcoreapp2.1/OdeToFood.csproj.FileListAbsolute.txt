@@ -41,6 +41,15 @@ C:\Users\Radek\source\repos\OdeToFood\OdeToFood\bin\Debug\netcoreapp2.1\OdeToFoo
 C:\Users\Radek\source\repos\OdeToFood\OdeToFood\obj\Debug\netcoreapp2.1\Razor\Pages\Restaurants\Detail.cshtml.g.cs
 C:\Users\Radek\source\repos\OdeToFood\OdeToFood\obj\Debug\netcoreapp2.1\Razor\Pages\Restaurants\NotFound.cshtml.g.cs
 C:\Users\Radek\source\repos\OdeToFood\OdeToFood\obj\Debug\netcoreapp2.1\Razor\Pages\Restaurants\Edit.cshtml.g.cs
-C:\Users\Radek\source\repos\OdeToFood\OdeToFood\obj\Debug\netcoreapp2.1\OdeToFood.csproj.CoreCompileInputs.cache
 C:\Users\Radek\source\repos\OdeToFood\OdeToFood\obj\Debug\netcoreapp2.1\Razor\Pages\Restaurants\Delete.cshtml.g.cs
 C:\Users\Radek\source\repos\OdeToFood\OdeToFood\obj\Debug\netcoreapp2.1\Razor\Pages\Restaurants\_Summary.cshtml.g.cs
+C:\Users\Radek\source\repos\OdeToFood\OdeToFood\obj\Debug\netcoreapp2.1\Razor\Pages\Shared\Components\RestaurantCount\Default.cshtml.g.cs
+C:\Users\Radek\source\repos\OdeToFood\OdeToFood\obj\Debug\netcoreapp2.1\Razor\Pages\R2\Create.cshtml.g.cs
+C:\Users\Radek\source\repos\OdeToFood\OdeToFood\obj\Debug\netcoreapp2.1\Razor\Pages\R2\Delete.cshtml.g.cs
+C:\Users\Radek\source\repos\OdeToFood\OdeToFood\obj\Debug\netcoreapp2.1\Razor\Pages\R2\Details.cshtml.g.cs
+C:\Users\Radek\source\repos\OdeToFood\OdeToFood\obj\Debug\netcoreapp2.1\Razor\Pages\R2\Edit.cshtml.g.cs
+C:\Users\Radek\source\repos\OdeToFood\OdeToFood\obj\Debug\netcoreapp2.1\Razor\Pages\R2\Index.cshtml.g.cs
+C:\Users\Radek\source\repos\OdeToFood\OdeToFood\obj\Debug\netcoreapp2.1\Razor\Pages\Restaurants\ClientRestaurants.cshtml.g.cs
+C:\Users\Radek\source\repos\OdeToFood\OdeToFood\bin\Debug\netcoreapp2.1\package-lock.json
+C:\Users\Radek\source\repos\OdeToFood\OdeToFood\bin\Debug\netcoreapp2.1\package.json
+C:\Users\Radek\source\repos\OdeToFood\OdeToFood\obj\Debug\netcoreapp2.1\OdeToFood.csproj.CoreCompileInputs.cache
