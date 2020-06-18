@@ -1,8 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
+﻿using System.Collections.Generic;
 using System.Threading.Tasks;
-using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using Microsoft.EntityFrameworkCore;
 using OdeToFood.Core;
@@ -12,14 +9,14 @@ namespace OdeToFood.Pages.R2
 {
     public class IndexModel : PageModel
     {
-        private readonly OdeToFood.Data.OdeToFoodDBContext _context;
+        private readonly OdeToFoodDBContext _context;
 
-        public IndexModel(OdeToFood.Data.OdeToFoodDBContext context)
+        public IndexModel(OdeToFoodDBContext context)
         {
             _context = context;
         }
 
-        public IList<Restaurant> Restaurant { get;set; }
+        public IList<Restaurant> Restaurant { get; set; }
 
         public async Task OnGetAsync()
         {

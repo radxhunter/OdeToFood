@@ -8,25 +8,23 @@ namespace OdeToFood.Data.Migrations
         protected override void Up(MigrationBuilder migrationBuilder)
         {
             migrationBuilder.CreateTable(
-                name: "Restaurants",
-                columns: table => new
+                "Restaurants",
+                table => new
                 {
-                    Id = table.Column<int>(nullable: false)
-                        .Annotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn),
-                    Name = table.Column<string>(maxLength: 80, nullable: false),
-                    Location = table.Column<string>(maxLength: 255, nullable: false),
-                    Cuisine = table.Column<int>(nullable: false)
+                    Id = table.Column<int>()
+                        .Annotation("SqlServer:ValueGenerationStrategy",
+                            SqlServerValueGenerationStrategy.IdentityColumn),
+                    Name = table.Column<string>(maxLength: 80),
+                    Location = table.Column<string>(maxLength: 255),
+                    Cuisine = table.Column<int>()
                 },
-                constraints: table =>
-                {
-                    table.PrimaryKey("PK_Restaurants", x => x.Id);
-                });
+                constraints: table => { table.PrimaryKey("PK_Restaurants", x => x.Id); });
         }
 
         protected override void Down(MigrationBuilder migrationBuilder)
         {
             migrationBuilder.DropTable(
-                name: "Restaurants");
+                "Restaurants");
         }
     }
 }

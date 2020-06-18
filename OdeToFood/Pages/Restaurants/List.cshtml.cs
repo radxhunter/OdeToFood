@@ -1,7 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
+﻿using System.Collections.Generic;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using Microsoft.Extensions.Configuration;
@@ -14,21 +11,23 @@ namespace OdeToFood.Pages.Restaurants
     public class ListModel : PageModel
     {
         private readonly IConfiguration configuration;
-        private readonly IRestaurantData restaurantData;
         private readonly ILogger<ListModel> logger;
+        private readonly IRestaurantData restaurantData;
 
-        public IEnumerable<Restaurant> Restaurants { get; set; }
-        [BindProperty(SupportsGet = true)]
-        public string SearchTerm { get; set; }
-
-        public string Message { get; set; }
-        public ListModel(Microsoft.Extensions.Configuration.IConfiguration configuration,
+        public ListModel(IConfiguration configuration,
             IRestaurantData restaurantData, ILogger<ListModel> logger)
         {
             this.configuration = configuration;
             this.restaurantData = restaurantData;
             this.logger = logger;
         }
+
+        public IEnumerable<Restaurant> Restaurants { get; set; }
+
+        [BindProperty(SupportsGet = true)] public string SearchTerm { get; set; }
+
+        public string Message { get; set; }
+
         public void OnGet()
         {
             Message = configuration["Message"];

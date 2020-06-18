@@ -1,7 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
+﻿using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using Microsoft.EntityFrameworkCore;
@@ -12,38 +9,28 @@ namespace OdeToFood.Pages.R2
 {
     public class DeleteModel : PageModel
     {
-        private readonly OdeToFood.Data.OdeToFoodDBContext _context;
+        private readonly OdeToFoodDBContext _context;
 
-        public DeleteModel(OdeToFood.Data.OdeToFoodDBContext context)
+        public DeleteModel(OdeToFoodDBContext context)
         {
             _context = context;
         }
 
-        [BindProperty]
-        public Restaurant Restaurant { get; set; }
+        [BindProperty] public Restaurant Restaurant { get; set; }
 
         public async Task<IActionResult> OnGetAsync(int? id)
         {
-            if (id == null)
-            {
-                return NotFound();
-            }
+            if (id == null) return NotFound();
 
             Restaurant = await _context.Restaurants.FirstOrDefaultAsync(m => m.Id == id);
 
-            if (Restaurant == null)
-            {
-                return NotFound();
-            }
+            if (Restaurant == null) return NotFound();
             return Page();
         }
 
         public async Task<IActionResult> OnPostAsync(int? id)
         {
-            if (id == null)
-            {
-                return NotFound();
-            }
+            if (id == null) return NotFound();
 
             Restaurant = await _context.Restaurants.FindAsync(id);
 

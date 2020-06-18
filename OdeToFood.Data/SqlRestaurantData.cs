@@ -1,7 +1,7 @@
-﻿using Microsoft.EntityFrameworkCore;
-using OdeToFood.Core;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.Linq;
+using Microsoft.EntityFrameworkCore;
+using OdeToFood.Core;
 
 namespace OdeToFood.Data
 {
@@ -13,6 +13,7 @@ namespace OdeToFood.Data
         {
             this.db = db;
         }
+
         public Restaurant Add(Restaurant newRestaurant)
         {
             db.Add(newRestaurant);
@@ -45,9 +46,9 @@ namespace OdeToFood.Data
         public IEnumerable<Restaurant> GetRestaurantsByName(string name)
         {
             var query = from r in db.Restaurants
-                        where r.Name.StartsWith(name) || string.IsNullOrEmpty(name)
-                        orderby r.Name
-                        select r;
+                where r.Name.StartsWith(name) || string.IsNullOrEmpty(name)
+                orderby r.Name
+                select r;
             return query;
         }
 

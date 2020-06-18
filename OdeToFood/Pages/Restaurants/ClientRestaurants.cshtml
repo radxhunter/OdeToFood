@@ -12,24 +12,25 @@
 
     <script src="C:\Users\Radek\source\repos\OdeToFood\OdeToFood\node_modules\datatables.net\js\jquery.dataTables.js"></script>
     <script src="C:\Users\Radek\source\repos\OdeToFood\OdeToFood\node_modules\datatables.net-bs\js\dataTables.bootstrap.js"></script>
-    <link href="C:\Users\Radek\source\repos\OdeToFood\OdeToFood\node_modules\datatables.net-bs\css\dataTables.bootstrap.css" rel="stylesheet" />
+    <link href="C:\Users\Radek\source\repos\OdeToFood\OdeToFood\node_modules\datatables.net-bs\css\dataTables.bootstrap.css" rel="stylesheet"/>
 
 
     <script>
-        $(function () {
+        $(function() {
 
-            var cuisines = ["Unknown", "Mexican", "Italian", "Indian"]
+            var cuisines = ["Unknown", "Mexican", "Italian", "Indian"];
 
             $.ajax("/api/restaurants/",
-                { method: "get" })
-                .then(function (response) {
+                    { method: "get" })
+                .then(function(response) {
                     $("#restaurants").dataTable({
                         data: response,
                         columns: [
                             { "data": "name" },
                             { "data": "location" },
                             {
-                                "data": "cuisine", "render": function (data) {
+                                "data": "cuisine",
+                                "render": function(data) {
                                     return cuisines[data];
                                 }
                             }
@@ -40,4 +41,3 @@
 
     </script>
 }
-

@@ -9,7 +9,7 @@
 <form method="get">
     <div class="form-group">
         <div class="input-group">
-            <input type="search" class="form-control" asp-for="SearchTerm" />
+            <input type="search" class="form-control" asp-for="SearchTerm"/>
             <span class="input-group-btn">
                 <button class="btn btn-default">
                     <i class="glyphicon glyphicon-search"></i>
@@ -21,9 +21,10 @@
 
 @foreach (var restaurant in Model.Restaurants)
 {
-    <partial name="_Summary" model="restaurant" />
+    <partial name="_Summary" model="restaurant"/>
 }
 
 <a class="btn btn-primary" asp-page="./Edit">Add new restaurant</a>
 
-@section footer{ <div>@Model.Message</div>}     
+@section footer{
+    <div>@Model.Message</div>}
