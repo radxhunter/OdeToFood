@@ -3621,25 +3621,20 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Radek\\.nuget\\packages\\": {},
-    "C:\\Microsoft\\Xamarin\\NuGet\\": {}
+    "C:\\Users\\Piotr\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Radek\\source\\repos\\OdeToFood\\OdeToFood.Data\\OdeToFood.Data.csproj",
+      "projectUniqueName": "C:\\Users\\Piotr\\source\\repos\\GithubProjects\\OdeToFood\\OdeToFood.Data\\OdeToFood.Data.csproj",
       "projectName": "OdeToFood.Data",
-      "projectPath": "C:\\Users\\Radek\\source\\repos\\OdeToFood\\OdeToFood.Data\\OdeToFood.Data.csproj",
-      "packagesPath": "C:\\Users\\Radek\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Radek\\source\\repos\\OdeToFood\\OdeToFood.Data\\obj\\",
+      "projectPath": "C:\\Users\\Piotr\\source\\repos\\GithubProjects\\OdeToFood\\OdeToFood.Data\\OdeToFood.Data.csproj",
+      "packagesPath": "C:\\Users\\Piotr\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Piotr\\source\\repos\\GithubProjects\\OdeToFood\\OdeToFood.Data\\obj\\",
       "projectStyle": "PackageReference",
-      "fallbackFolders": [
-        "C:\\Microsoft\\Xamarin\\NuGet\\"
-      ],
       "configFilePaths": [
-        "C:\\Users\\Radek\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+        "C:\\Users\\Piotr\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
         "netcoreapp2.1"
@@ -3651,8 +3646,8 @@
       "frameworks": {
         "netcoreapp2.1": {
           "projectReferences": {
-            "C:\\Users\\Radek\\source\\repos\\OdeToFood\\OdeToFood.Core\\OdeToFood.Core.csproj": {
-              "projectPath": "C:\\Users\\Radek\\source\\repos\\OdeToFood\\OdeToFood.Core\\OdeToFood.Core.csproj"
+            "C:\\Users\\Piotr\\source\\repos\\GithubProjects\\OdeToFood\\OdeToFood.Core\\OdeToFood.Core.csproj": {
+              "projectPath": "C:\\Users\\Piotr\\source\\repos\\GithubProjects\\OdeToFood\\OdeToFood.Core\\OdeToFood.Core.csproj"
             }
           }
         }
@@ -3697,7 +3692,7 @@
         ],
         "assetTargetFallback": true,
         "warn": true,
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.200\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.102\\RuntimeIdentifierGraph.json"
       }
     }
   }

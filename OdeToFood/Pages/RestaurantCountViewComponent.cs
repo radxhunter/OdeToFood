@@ -1,9 +1,5 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using OdeToFood.Data;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
 
 namespace OdeToFood.Pages
 {
@@ -15,6 +11,7 @@ namespace OdeToFood.Pages
         {
             this.restaurantData = restaurantData;
         }
+
         public IViewComponentResult Invoke()
         {
             var count = restaurantData.GetCountOfRestaurant();
